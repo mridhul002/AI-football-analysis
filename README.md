@@ -28,3 +28,30 @@ To run this project, you need to have the following requirements installed:
 - NumPy
 - Matplotlib
 - Pandas
+
+
+
+
+
+# AI Football Analyzer
+
+This project analyzes football match videos using computer vision and AI to:
+- Track player movement
+- Assign teams
+- Detect ball
+- Calculate speed/distance
+
+## 📁 Project Structure
+- `backend/`: Core processing modules
+- `input_videos/`: Raw match footage
+- `models/`: Pretrained models
+- `output_videos/`: Processed results
+- `website/`: Web frontend
+
+## 🛠 Setup
+```bash
+git clone https://github.com/your-username/ai-football-analyzer.git
+cd ai-football-analyzer
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt

@@ -1,0 +1,24 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+.env/
+
+# Large folders
+input_videos/
+output_videos/
+uploads/
+
+# Model & Video files
+*.pt
+*.pth
+*.h5
+*.onnx
+*.mp4
+*.avi
+
+# OS and Editor specific
+.DS_Store
+.vscode/

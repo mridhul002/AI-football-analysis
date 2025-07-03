@@ -1,0 +1,264 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 20px;
+  z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Navigation Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  display: inline;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #f4a261;
+}
+
+/* Auth Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  padding-right: 40px;
+}
+
+.login-btn, .signup-btn {
+  background-color: #f4a261;
+  border: none;
+  padding: 8px 15px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.signup-btn {
+  background-color: #2a9d8f;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  opacity: 0.8;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Full screen height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size:x-large;
+    color: rgb(255, 251, 251);
+    overflow: hidden;
+}
+
+
+
+/* Background Video */
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(3px) brightness(0.6); /* More blur and slight dimming for contrast */
+}
+
+/* Content Overlay */
+.banner-content {
+  position: relative;
+  z-index: 2;
+  /* background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.banner-content h1 {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffcc00; /* Bright yellow accent */
+}
+
+.banner-content p {
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
+/* Upload Section */
+.upload-section {
+  padding: 30px;
+  text-align: center;
+  background: linear-gradient(135deg, #2a3d56, #00aaff);
+  color: white;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.upload-section h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Upload Form */
+#video-upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.upload-label {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 5px;
+}
+
+/* File Input */
+#video-upload {
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+/* Upload Button */
+.upload-button {
+  padding: 12px 25px;
+  font-size: 1.3em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ffcc00, #ff6600);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.upload-button:hover {
+  background: linear-gradient(135deg, #ff9900, #cc0000);
+  transform: scale(1.05);
+}
+
+/* Video Preview */
+#video-preview {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#video-preview h3 {
+  font-size: 1.5em;
+  color: #ffcc00;
+}
+
+#video-player {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+  .analysis-result {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border-radius: 10px;
+    display: none; /* Hide this initially */
+  }
+  
+  #result-info p {
+    font-size: 1.2em;
+  }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .banner-content {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner p {
+        font-size: 1em;
+    }
+}
